@@ -4,8 +4,8 @@ Apenas abra o index.html e jogue!
 
 ## Table of Contents
 
-* [Observações](#observacoes)
-* [Dependências](#dependencias)
+* [Observações](#observações)
+* [Dependências](#dependências)
 
 ## Observações
 O HTML e CSS inicial do projeto foi retirado do repositório: https://github.com/udacity/fend-project-memory-game
