@@ -8,10 +8,6 @@ html {
     box-sizing: inherit;
 }
 
-@media(max-width: 395px){
-   
-}
-
 html,
 body {
     width: 100%;

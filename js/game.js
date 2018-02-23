@@ -82,7 +82,6 @@ Game.prototype.checkMove = function(elem){
         // SET MATCH CSS AND ANIMATE
         carta1.match();
         carta2.match();
-        // 
         this.isAllMatched()
     }else{       
         carta1.error();
