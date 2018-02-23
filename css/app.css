@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+@media(max-width: 395px){
+   
+}
+
 html,
 body {
     width: 100%;
@@ -38,7 +42,9 @@ h1 {
  */
 
 .deck {
-    width: 660px;
+    width: 100%;
+    max-width: 660px;
+    min-width: 395px;
     min-height: 680px;
     background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
     padding: 32px;
@@ -63,16 +69,21 @@ h1 {
     justify-content: center;
     align-items: center;
     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+
+    margin: 10px auto;
 }
 
 .deck .card.open {
-    transform: rotateY(0);
+    transform: rotateY(180deg);
+    transition: transform 0.5s, background 0.250s;
     background: #02b3e4;
     cursor: default;
 }
 
-.deck .card.show {
+
+.deck .card.showicon {
     font-size: 33px;
+    transform: rotateY(180deg);
 }
 
 .deck .card.match {
@@ -81,17 +92,28 @@ h1 {
     font-size: 33px;
 }
 
+.deck .card.error{
+    background: red;
+}
+
+.flip{
+    transform: rotateY(360deg);
+    transition: transform 0.5s;
+}
+
 /*
  * Styles for the Score Panel
  */
 
 .score-panel {
-    text-align: left;
-    width: 345px;
-    margin-bottom: 10px;
+    /*text-align: left;*/
+    width: 100%;
+    max-width: 660px;
+    margin: 20px 20px 10px 20px;
 }
 
 .score-panel .stars {
+    font-size: 20px;
     margin: 0;
     padding: 0;
     display: inline-block;
