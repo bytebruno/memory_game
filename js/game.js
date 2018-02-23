@@ -101,7 +101,7 @@ Game.prototype.isAllMatched = function() {
             count++; 
     });
     
-    if(count === 2){ //this.deck.cardsList.length){
+    if(count === this.deck.cardsList.length){
         this.canClick = false;
         this.timer.stop(); 
         swal({
